@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'cool';
+    src: url(FFRobot-Regular.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    background: rgb(195,8,63);
+    background: linear-gradient(0deg, rgba(195,8,63,1) 0%, rgba(111,34,50,1) 100%);
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h1{
+    font-family: 'cool';
+    font-size: 50px;
+    text-shadow: 1px 1px 10px rgb(90, 14, 14), 0 0 1em #a52d5fc9, 0 0 0.2em #470c2598;
+}
+
+.calculator{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 320px;
+}
+
+input{
+    width: 280px;
+    font-size: 60px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    background: transparent;
+    text-align: right;
+    text-shadow: 0px 5px 15px #61042b;
+    text-shadow: 1px 1px 10px rgb(36, 20, 20), 0 0 1em #42343ac9, 0 0 0.2em #27161d98;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    margin: 3px;
+    border-radius: 10%;
+    background-color: #95074298;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button:hover{
+    box-shadow: rgba(44, 44, 80, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #61042b;
+    color: #fff;
+}
+
+button:active{
+    box-shadow: rgba(44, 44, 80, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #8b0f43c9;
+}
+
+.operator{
+    font-size: large;
+    font-weight: 700;
+    color: #470621;
+}
+
+.del, .ac{
+    font-weight: 900;
+}
+
+.equalbtn{
+    box-shadow: rgba(44, 44, 80, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #61042b;
+}
